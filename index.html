@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batch 2 Lecture 69 Js Class Inheritance</title>
+</head>
+
+<body>
+
+
+    <script>
+        // i can write the code before the closing of body tag
+
+        class MyClassA { // PascalCase
+
+            //1 Member 1
+
+
+
+            //2Member2
+
+
+            //2 Member3
+            // methods defiantion
+            addition(x, y) { //camelCase xand y are formal arguments
+                // every function and method should return
+                return x + y;
+            }
+        }
+
+        // In order to call a method inside a class with you have create object
+
+        let obj1 = new MyClassA();
+        let res = obj1.addition(5, 6); // 5,6 is actual arguments
+        console.log(res);
+
+        class MyClassB extends MyClassA {
+            //1 Member 1
+
+
+
+            //2Member2
+
+
+            //2 Member3
+            // methods defiantion
+            subtraction(x, y) { // xand y are formal argument
+
+                // every function and method should return
+                return x - y;
+            }
+        }
+
+        class MyClassC extends MyClassB {
+            //1 Member 1
+
+
+
+            //2Member2
+
+
+            //2 Member3
+            // methods defiantion
+            muliplication(x, y) { // xand y are formal argument
+
+                // every function and method should return
+                return x * y;
+            }
+        }
+        let obj2 = new MyClassC();
+
+        console.log(obj2.muliplication(80, 10));
+        console.log(obj2.addition(80, 10));
+        console.log(obj2.subtraction(80, 10));
+
+
+
+    </script>
+
+</body>
+
+</html>
